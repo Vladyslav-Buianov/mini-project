@@ -1,4 +1,5 @@
-import { getImages, renderImages } from "./js/getImages.js";
+import { getImages } from "./js/getImages.js";
+import { renderImages } from "./js/renderImages.js"
 import { error as notifyError, success as notifySuccess } from '@pnotify/core';
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
