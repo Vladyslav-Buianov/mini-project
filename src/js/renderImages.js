@@ -1,8 +1,8 @@
 export function renderImages(array, item) {
   const imagesMarkup = array
-    .map(({ webformatURL, tags, likes, views, comments, downloads }) => {
+    .map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
       return `<div class="photo-card">
-  <img src="${webformatURL}" alt="${tags}" />
+  <img data-image="${largeImageURL}" src="${webformatURL}" alt="${tags}" />
   <div class="stats">
     <p class="stats-item">
       <i class="material-icons">thumb_up</i>
